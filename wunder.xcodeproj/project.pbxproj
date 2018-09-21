@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F538FA82CA1077293E0EACD /* Pods_wunder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67869F5176278A705AFFDF7F /* Pods_wunder.framework */; };
+		C776346746BF27A00C06DE9B /* Pods_wunderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE96DC568886A85763E44D6E /* Pods_wunderTests.framework */; };
+		EC06C7142152CFEB00323745 /* CarUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06C7132152CFEB00323745 /* CarUITableViewCell.swift */; };
+		EC7A912D21517A26004F5104 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7A912C21517A26004F5104 /* Configuration.swift */; };
+		EC7A912F21517F05004F5104 /* CarsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7A912E21517F05004F5104 /* CarsViewViewModel.swift */; };
+		EC7A9131215187C0004F5104 /* LocationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7A9130215187BF004F5104 /* LocationsResponse.swift */; };
+		ECA3F93F2153A44E0047FAB1 /* CarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3F93E2153A44E0047FAB1 /* CarDetailViewController.swift */; };
+		ECA3F9412153CC420047FAB1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3F9402153CC420047FAB1 /* MapViewController.swift */; };
+		ECC2B7CE215528860097DA7B /* CarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2B7CD215528860097DA7B /* CarRepository.swift */; };
+		ECCC8007215151B800BFB9E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC8006215151B800BFB9E2 /* AppDelegate.swift */; };
+		ECCC8009215151B800BFB9E2 /* CarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC8008215151B800BFB9E2 /* CarTableViewController.swift */; };
+		ECCC800C215151B800BFB9E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCC800A215151B800BFB9E2 /* Main.storyboard */; };
+		ECCC800F215151B800BFB9E2 /* wunder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECCC800D215151B800BFB9E2 /* wunder.xcdatamodeld */; };
+		ECCC8011215151BA00BFB9E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCC8010215151BA00BFB9E2 /* Assets.xcassets */; };
+		ECCC8014215151BA00BFB9E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCC8012215151BA00BFB9E2 /* LaunchScreen.storyboard */; };
+		ECCC801F215151BA00BFB9E2 /* wunderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC801E215151BA00BFB9E2 /* wunderTests.swift */; };
+		ECCC802B21516D8900BFB9E2 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC802A21516D8900BFB9E2 /* Car.swift */; };
+		ECCC80322151772300BFB9E2 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC80312151772300BFB9E2 /* ApiService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECCC801B215151BA00BFB9E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECCC7FFB215151B800BFB9E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECCC8002215151B800BFB9E2;
+			remoteInfo = wunder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E12EEF44E58C792CAD3EB75 /* Pods-wunder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wunder.release.xcconfig"; path = "Pods/Target Support Files/Pods-wunder/Pods-wunder.release.xcconfig"; sourceTree = "<group>"; };
+		67869F5176278A705AFFDF7F /* Pods_wunder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wunder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77EDAE5521A5741F55CBC93D /* Pods-wunder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wunder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wunder/Pods-wunder.debug.xcconfig"; sourceTree = "<group>"; };
+		8CFC5A87CE63503152597B45 /* Pods-wunderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wunderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-wunderTests/Pods-wunderTests.release.xcconfig"; sourceTree = "<group>"; };
+		BC725662FC4428C00B632B9D /* Pods-wunderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wunderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wunderTests/Pods-wunderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE96DC568886A85763E44D6E /* Pods_wunderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wunderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC06C7132152CFEB00323745 /* CarUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarUITableViewCell.swift; sourceTree = "<group>"; };
+		EC7A912C21517A26004F5104 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		EC7A912E21517F05004F5104 /* CarsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsViewViewModel.swift; sourceTree = "<group>"; };
+		EC7A9130215187BF004F5104 /* LocationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsResponse.swift; sourceTree = "<group>"; };
+		ECA3F93E2153A44E0047FAB1 /* CarDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewController.swift; sourceTree = "<group>"; };
+		ECA3F9402153CC420047FAB1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		ECC2B7CD215528860097DA7B /* CarRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepository.swift; sourceTree = "<group>"; };
+		ECCC8003215151B800BFB9E2 /* wunder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wunder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECCC8006215151B800BFB9E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECCC8008215151B800BFB9E2 /* CarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewController.swift; sourceTree = "<group>"; };
+		ECCC800B215151B800BFB9E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECCC800E215151B800BFB9E2 /* wunder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = wunder.xcdatamodel; sourceTree = "<group>"; };
+		ECCC8010215151BA00BFB9E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECCC8013215151BA00BFB9E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECCC8015215151BA00BFB9E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECCC801A215151BA00BFB9E2 /* wunderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wunderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECCC801E215151BA00BFB9E2 /* wunderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wunderTests.swift; sourceTree = "<group>"; };
+		ECCC8020215151BB00BFB9E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECCC802A21516D8900BFB9E2 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		ECCC80312151772300BFB9E2 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECCC8000215151B800BFB9E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F538FA82CA1077293E0EACD /* Pods_wunder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECCC8017215151BA00BFB9E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C776346746BF27A00C06DE9B /* Pods_wunderTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		741E33140A0A969D0A5AB577 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67869F5176278A705AFFDF7F /* Pods_wunder.framework */,
+				BE96DC568886A85763E44D6E /* Pods_wunderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B50236200F478EBD762D3B2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77EDAE5521A5741F55CBC93D /* Pods-wunder.debug.xcconfig */,
+				3E12EEF44E58C792CAD3EB75 /* Pods-wunder.release.xcconfig */,
+				BC725662FC4428C00B632B9D /* Pods-wunderTests.debug.xcconfig */,
+				8CFC5A87CE63503152597B45 /* Pods-wunderTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ECA3F942215407860047FAB1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECCC8008215151B800BFB9E2 /* CarTableViewController.swift */,
+				EC06C7132152CFEB00323745 /* CarUITableViewCell.swift */,
+				ECA3F93E2153A44E0047FAB1 /* CarDetailViewController.swift */,
+				ECA3F9402153CC420047FAB1 /* MapViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ECC2B7CA215528580097DA7B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ECCC80312151772300BFB9E2 /* ApiService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ECC2B7CB2155286A0097DA7B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EC7A912C21517A26004F5104 /* Configuration.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		ECC2B7CC215528760097DA7B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				ECC2B7CD215528860097DA7B /* CarRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		ECCC7FFA215151B800BFB9E2 = {
+			isa = PBXGroup;
+			children = (
+				ECCC8005215151B800BFB9E2 /* wunder */,
+				ECCC801D215151BA00BFB9E2 /* wunderTests */,
+				ECCC8004215151B800BFB9E2 /* Products */,
+				B50236200F478EBD762D3B2D /* Pods */,
+				741E33140A0A969D0A5AB577 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ECCC8004215151B800BFB9E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECCC8003215151B800BFB9E2 /* wunder.app */,
+				ECCC801A215151BA00BFB9E2 /* wunderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECCC8005215151B800BFB9E2 /* wunder */ = {
+			isa = PBXGroup;
+			children = (
+				ECC2B7CC215528760097DA7B /* Repository */,
+				ECC2B7CB2155286A0097DA7B /* Utilities */,
+				ECC2B7CA215528580097DA7B /* Services */,
+				ECA3F942215407860047FAB1 /* ViewControllers */,
+				ECCC802E21516F3000BFB9E2 /* ViewModel */,
+				ECCC802921516D7800BFB9E2 /* Models */,
+				ECCC8006215151B800BFB9E2 /* AppDelegate.swift */,
+				ECCC800A215151B800BFB9E2 /* Main.storyboard */,
+				ECCC8010215151BA00BFB9E2 /* Assets.xcassets */,
+				ECCC8012215151BA00BFB9E2 /* LaunchScreen.storyboard */,
+				ECCC8015215151BA00BFB9E2 /* Info.plist */,
+				ECCC800D215151B800BFB9E2 /* wunder.xcdatamodeld */,
+			);
+			path = wunder;
+			sourceTree = "<group>";
+		};
+		ECCC801D215151BA00BFB9E2 /* wunderTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECCC801E215151BA00BFB9E2 /* wunderTests.swift */,
+				ECCC8020215151BB00BFB9E2 /* Info.plist */,
+			);
+			path = wunderTests;
+			sourceTree = "<group>";
+		};
+		ECCC802921516D7800BFB9E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECCC802A21516D8900BFB9E2 /* Car.swift */,
+				EC7A9130215187BF004F5104 /* LocationsResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ECCC802E21516F3000BFB9E2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC7A912E21517F05004F5104 /* CarsViewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECCC8002215151B800BFB9E2 /* wunder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECCC8023215151BB00BFB9E2 /* Build configuration list for PBXNativeTarget "wunder" */;
+			buildPhases = (
+				A4154EB2A5F4C50091C41D3D /* [CP] Check Pods Manifest.lock */,
+				ECCC7FFF215151B800BFB9E2 /* Sources */,
+				ECCC8000215151B800BFB9E2 /* Frameworks */,
+				ECCC8001215151B800BFB9E2 /* Resources */,
+				D891DE045A0CB2CD54773929 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wunder;
+			productName = wunder;
+			productReference = ECCC8003215151B800BFB9E2 /* wunder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECCC8019215151BA00BFB9E2 /* wunderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECCC8026215151BB00BFB9E2 /* Build configuration list for PBXNativeTarget "wunderTests" */;
+			buildPhases = (
+				D0198BF4E097B1632BCA9D0B /* [CP] Check Pods Manifest.lock */,
+				ECCC8016215151BA00BFB9E2 /* Sources */,
+				ECCC8017215151BA00BFB9E2 /* Frameworks */,
+				ECCC8018215151BA00BFB9E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECCC801C215151BA00BFB9E2 /* PBXTargetDependency */,
+			);
+			name = wunderTests;
+			productName = wunderTests;
+			productReference = ECCC801A215151BA00BFB9E2 /* wunderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECCC7FFB215151B800BFB9E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Ilie Sochirca";
+				TargetAttributes = {
+					ECCC8002215151B800BFB9E2 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					ECCC8019215151BA00BFB9E2 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = ECCC8002215151B800BFB9E2;
+					};
+				};
+			};
+			buildConfigurationList = ECCC7FFE215151B800BFB9E2 /* Build configuration list for PBXProject "wunder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECCC7FFA215151B800BFB9E2;
+			productRefGroup = ECCC8004215151B800BFB9E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECCC8002215151B800BFB9E2 /* wunder */,
+				ECCC8019215151BA00BFB9E2 /* wunderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECCC8001215151B800BFB9E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECCC8014215151BA00BFB9E2 /* LaunchScreen.storyboard in Resources */,
+				ECCC8011215151BA00BFB9E2 /* Assets.xcassets in Resources */,
+				ECCC800C215151B800BFB9E2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECCC8018215151BA00BFB9E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4154EB2A5F4C50091C41D3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wunder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0198BF4E097B1632BCA9D0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wunderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D891DE045A0CB2CD54773929 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-wunder/Pods-wunder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wunder/Pods-wunder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECCC7FFF215151B800BFB9E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA3F93F2153A44E0047FAB1 /* CarDetailViewController.swift in Sources */,
+				EC7A912F21517F05004F5104 /* CarsViewViewModel.swift in Sources */,
+				EC7A912D21517A26004F5104 /* Configuration.swift in Sources */,
+				ECCC800F215151B800BFB9E2 /* wunder.xcdatamodeld in Sources */,
+				ECCC80322151772300BFB9E2 /* ApiService.swift in Sources */,
+				ECCC8009215151B800BFB9E2 /* CarTableViewController.swift in Sources */,
+				ECA3F9412153CC420047FAB1 /* MapViewController.swift in Sources */,
+				EC7A9131215187C0004F5104 /* LocationsResponse.swift in Sources */,
+				ECC2B7CE215528860097DA7B /* CarRepository.swift in Sources */,
+				ECCC802B21516D8900BFB9E2 /* Car.swift in Sources */,
+				EC06C7142152CFEB00323745 /* CarUITableViewCell.swift in Sources */,
+				ECCC8007215151B800BFB9E2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECCC8016215151BA00BFB9E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECCC801F215151BA00BFB9E2 /* wunderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECCC801C215151BA00BFB9E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECCC8002215151B800BFB9E2 /* wunder */;
+			targetProxy = ECCC801B215151BA00BFB9E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECCC800A215151B800BFB9E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECCC800B215151B800BFB9E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECCC8012215151BA00BFB9E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECCC8013215151BA00BFB9E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECCC8021215151BB00BFB9E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECCC8022215151BB00BFB9E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECCC8024215151BB00BFB9E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77EDAE5521A5741F55CBC93D /* Pods-wunder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = wunder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ilie.wunder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECCC8025215151BB00BFB9E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E12EEF44E58C792CAD3EB75 /* Pods-wunder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = wunder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ilie.wunder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECCC8027215151BB00BFB9E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC725662FC4428C00B632B9D /* Pods-wunderTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = wunderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ilie.wunderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wunder.app/wunder";
+			};
+			name = Debug;
+		};
+		ECCC8028215151BB00BFB9E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CFC5A87CE63503152597B45 /* Pods-wunderTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = wunderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ilie.wunderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wunder.app/wunder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECCC7FFE215151B800BFB9E2 /* Build configuration list for PBXProject "wunder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECCC8021215151BB00BFB9E2 /* Debug */,
+				ECCC8022215151BB00BFB9E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECCC8023215151BB00BFB9E2 /* Build configuration list for PBXNativeTarget "wunder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECCC8024215151BB00BFB9E2 /* Debug */,
+				ECCC8025215151BB00BFB9E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECCC8026215151BB00BFB9E2 /* Build configuration list for PBXNativeTarget "wunderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECCC8027215151BB00BFB9E2 /* Debug */,
+				ECCC8028215151BB00BFB9E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ECCC800D215151B800BFB9E2 /* wunder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ECCC800E215151B800BFB9E2 /* wunder.xcdatamodel */,
+			);
+			currentVersion = ECCC800E215151B800BFB9E2 /* wunder.xcdatamodel */;
+			path = wunder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ECCC7FFB215151B800BFB9E2 /* Project object */;
+}
